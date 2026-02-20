@@ -67,11 +67,11 @@ INSERT INTO grades (grade1, grade2, rec, subject_id) VALUES
 -- REPORT_CARD (15 insertions - matching grades)
 INSERT INTO report_card (final_situation, subject_id, professor_id, student_id) VALUES
 -- Student 1 (João Silva)
-(TRUE,  (select id from subjects where name = 'Matemática'),   (select id from professors where username = 'ana.mat'), 	  (select enrollment from students where name = 'João Silva')),   
+(TRUE,  (select id from subjects where name = 'Matemática'),   (select id from professors where username = 'ana.mat'), 	    (select enrollment from students where name = 'João Silva')),   
 (TRUE,  (select id from subjects where name = 'Português'),    (select id from professors where username = 'carlos.port'),  (select enrollment from students where name = 'João Silva')),   
 (TRUE,  (select id from subjects where name = 'História'),     (select id from professors where username = 'juliana.hist'), (select enrollment from students where name = 'João Silva')),   
 -- Student 2 (Maria Santos)
-(TRUE,  (select id from subjects where name = 'Matemática'),   (select id from professors where username = 'ana.mat'), 	  (select enrollment from students where name = 'Maria Santos')),  
+(TRUE,  (select id from subjects where name = 'Matemática'),   (select id from professors where username = 'ana.mat'), 	    (select enrollment from students where name = 'Maria Santos')),  
 (FALSE, (select id from subjects where name = 'Ciências'),     (select id from professors where username = 'marcos.cien'),  (select enrollment from students where name = 'Maria Santos')),  
 -- Student 3 (Pedro Oliveira)
 (TRUE,  (select id from subjects where name = 'Português'),    (select id from professors where username = 'carlos.port'),  (select enrollment from students where name = 'Pedro Oliveira')),   
